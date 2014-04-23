@@ -1,0 +1,1 @@
+np.loadtxt("messy_data.dat", delimeter = ',')

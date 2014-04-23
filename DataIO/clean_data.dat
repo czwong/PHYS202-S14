@@ -1,0 +1,4 @@
+contents = open('messy_data.dat').read()
+out = open('messy_data.dat', 'w')
+out.write(contents.replace(' ', '_'))
+out.close()

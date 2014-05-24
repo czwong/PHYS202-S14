@@ -1,13 +1,13 @@
 import numpy as np
 def trapz(func, N, a, b):
-    """docstring"""
+    """Trapezoidal approximation is the area under one slice of our function."""
     h = (b-a)/N
     k = np.arange(1,N)
     I = h*(0.5*func(a) + 0.5*func(b) + func(a+k*h).sum())
     return I
 
 def simps(func, N, a, b):
-    """docstring"""
+    """Simpson’s rule gives us an approximation to the area under two adjacent slices of our function."""
     h = (b-a)/N
     k1 = np.arange(1,N/2+1)
     k2 = np.arange(1,N/2)
